@@ -26,7 +26,7 @@ int main(int argc , char *argv[])
 	char* message;
 	int *new_sock;
 
-	printf("\nInitialising Winsock...\n");
+	printf("\n Initialising Winsock...\n");
 	if (WSAStartup(MAKEWORD(2,2),&wsa) != 0)
 	{
 		printf("Failed. Error Code : %d\n",WSAGetLastError());

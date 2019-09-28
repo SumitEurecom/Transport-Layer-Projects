@@ -60,10 +60,11 @@ int main(int argc , char *argv[])
 
 
 	//server.sin_addr.s_addr = inet_addr("172.217.18.174"); // for www.google.com
-	server.sin_addr.s_addr = inet_addr("127.0.0.1"); // for localhost
+	//server.sin_addr.s_addr = inet_addr("10.187.80.88"); // for another system
+	server.sin_addr.s_addr = inet_addr("127.0.0.1"); // for local host
     server.sin_family = AF_INET;
 	//server.sin_port = htons( 80 ); // for any webpage
-    server.sin_port = htons( 52000 ); // for localhost
+    server.sin_port = htons( 53000 ); // for localhost
     		//Connect to remote server
 	if (connect(s , (struct sockaddr *)&server , sizeof(server)) < 0)
 	{
@@ -78,7 +79,7 @@ int main(int argc , char *argv[])
     {
         //Send some data
         //message = "GET / HTTP/1.1\r\n\r\n"; // for any webpage
-        message = "Hello Server, fuck you"; // for localhost
+        message = "Hello Server\n"; // for localhost
         //memset(message,0,BUFFLEN);
         if( send(s , message , strlen(message) , 0) < 0)
         {
