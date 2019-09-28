@@ -1,5 +1,12 @@
+Tutorials:
 https://www.binarytides.com/receive-full-data-with-recv-socket-function-in-c/
 https://www.binarytides.com/udp-socket-programming-in-winsock/
 https://www.binarytides.com/winsock-socket-programming-tutorial/
 https://www.binarytides.com/get-mac-address-from-ip-in-winsock/
 https://www.binarytides.com/category/programming/sockets/winsock-sockets/
+
+Also there is an extra forked by me. 
+https://github.com/SumitSnT/c-network-programming-best-snipts
+
+Useful references:
+https://github.com/climberhunt/ATTIRE/blob/master/client-server/client.c
